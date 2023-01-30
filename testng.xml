@@ -5,6 +5,7 @@
     <classes>
       <class name="com.test.firstTest"/>
       <class name="com.test.secondTest"/>
+
     </classes>
   </test>
 </suite>
