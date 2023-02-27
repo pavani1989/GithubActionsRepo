@@ -54,7 +54,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_URL: ${{ secrets.SONAR_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=pavani1989_GithubActionsRepo    -Dsonar.host.url=$SONAR_URL   -Dsonar.login=$SONAR_TOKEN    
+          SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.host.url=$SONAR_URL -Dsonar.login=$SONAR_TOKEN    
  
 #       - name: Sonar Cloud Analysis
 #         if: success() # always() failure() success()
