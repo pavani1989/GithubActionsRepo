@@ -13,11 +13,11 @@ public class secondTest {
 
 	@Test
 	public void test2() {
+	assertTrue(true);
+		//for (int i = 0; i < 200; i++)
+//System.out.print("test summaries....");
 
-		for (int i = 0; i < 200; i++)
-			System.out.print("test summaries....");
-
-		Assert.assertTrue(true, "test is passed");
+		//Assert.assertTrue(true, "test is passed");
 	}
 
 	@Test
@@ -35,6 +35,7 @@ public class secondTest {
 	//@Test 
 	public void testAdd()
     {
+			assertTrue(true);
         Library classUnderTest = new Library();
         Assert.assertTrue(classUnderTest.add(1,2)==3, "1+2 should be 3" );
     }
